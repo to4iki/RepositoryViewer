@@ -7,14 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E5670151F7BF0F6006E32B7 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4BB6C1F7BE4120094A58E /* APIKit.framework */; };
+		1E5670161F7BF0F6006E32B7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5670131F7BECEC006E32B7 /* RxCocoa.framework */; };
+		1E5670171F7BF0F6006E32B7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4BB6B1F7BE4120094A58E /* RxSwift.framework */; };
+		1E5670221F7BF37F006E32B7 /* GitHubAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5670201F7BF37F006E32B7 /* GitHubAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E5670251F7BF380006E32B7 /* GitHubAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E56701E1F7BF37F006E32B7 /* GitHubAPI.framework */; };
+		1E5670261F7BF380006E32B7 /* GitHubAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1E56701E1F7BF37F006E32B7 /* GitHubAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1E56702A1F7BF38B006E32B7 /* GitHubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4BB721F7BE4A20094A58E /* GitHubRequest.swift */; };
+		1E56702B1F7BF38B006E32B7 /* JSONDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E56700E1F7BE87A006E32B7 /* JSONDataParser.swift */; };
+		1E56702C1F7BF38B006E32B7 /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4BB741F7BE5E50094A58E /* GitHubAPI.swift */; };
+		1E56702D1F7BF3AF006E32B7 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4BB6C1F7BE4120094A58E /* APIKit.framework */; };
+		1E56702E1F7BF3AF006E32B7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4BB6A1F7BE4120094A58E /* Result.framework */; };
+		1E56702F1F7BF3AF006E32B7 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5670131F7BECEC006E32B7 /* RxCocoa.framework */; };
+		1E5670301F7BF3AF006E32B7 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4BB6B1F7BE4120094A58E /* RxSwift.framework */; };
+		1E5670331F7BF559006E32B7 /* Session+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5670111F7BEBD9006E32B7 /* Session+Rx.swift */; };
+		1E5670341F7BF92B006E32B7 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4BB6A1F7BE4120094A58E /* Result.framework */; };
 		1E70A8F81F7BE0420053E826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E70A8F71F7BE0420053E826 /* AppDelegate.swift */; };
 		1E70A8FA1F7BE0420053E826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E70A8F91F7BE0420053E826 /* ViewController.swift */; };
 		1E70A8FD1F7BE0420053E826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E70A8FB1F7BE0420053E826 /* Main.storyboard */; };
 		1E70A8FF1F7BE0420053E826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E70A8FE1F7BE0420053E826 /* Assets.xcassets */; };
 		1E70A9021F7BE0420053E826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E70A9001F7BE0420053E826 /* LaunchScreen.storyboard */; };
+		1EB6EA771F7EADAF00CFA203 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6EA761F7EADAF00CFA203 /* Repository.swift */; };
+		1EB6EA7A1F7EADBE00CFA203 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6EA791F7EADBE00CFA203 /* SearchResponse.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1E5670231F7BF380006E32B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E70A8EC1F7BE0420053E826 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E56701D1F7BF37F006E32B7;
+			remoteInfo = GitHubAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1EE4BB681F7BE3C80094A58E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1E5670261F7BF380006E32B7 /* GitHubAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1E56700E1F7BE87A006E32B7 /* JSONDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataParser.swift; sourceTree = "<group>"; };
+		1E5670111F7BEBD9006E32B7 /* Session+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+Rx.swift"; sourceTree = "<group>"; };
+		1E5670131F7BECEC006E32B7 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		1E56701E1F7BF37F006E32B7 /* GitHubAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GitHubAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E5670201F7BF37F006E32B7 /* GitHubAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GitHubAPI.h; sourceTree = "<group>"; };
+		1E5670211F7BF37F006E32B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E70A8F41F7BE0420053E826 /* RepositoryViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepositoryViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E70A8F71F7BE0420053E826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E70A8F91F7BE0420053E826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,22 +69,69 @@
 		1E70A8FE1F7BE0420053E826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E70A9011F7BE0420053E826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E70A9031F7BE0420053E826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EB6EA761F7EADAF00CFA203 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1EB6EA791F7EADBE00CFA203 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		1EE4BB6A1F7BE4120094A58E /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		1EE4BB6B1F7BE4120094A58E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		1EE4BB6C1F7BE4120094A58E /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		1EE4BB6D1F7BE4120094A58E /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = Carthage/Build/iOS; sourceTree = "<group>"; };
+		1EE4BB721F7BE4A20094A58E /* GitHubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRequest.swift; sourceTree = "<group>"; };
+		1EE4BB741F7BE5E50094A58E /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E56701A1F7BF37F006E32B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E56702D1F7BF3AF006E32B7 /* APIKit.framework in Frameworks */,
+				1E56702E1F7BF3AF006E32B7 /* Result.framework in Frameworks */,
+				1E56702F1F7BF3AF006E32B7 /* RxCocoa.framework in Frameworks */,
+				1E5670301F7BF3AF006E32B7 /* RxSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E70A8F11F7BE0420053E826 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5670341F7BF92B006E32B7 /* Result.framework in Frameworks */,
+				1E5670151F7BF0F6006E32B7 /* APIKit.framework in Frameworks */,
+				1E5670161F7BF0F6006E32B7 /* RxCocoa.framework in Frameworks */,
+				1E5670171F7BF0F6006E32B7 /* RxSwift.framework in Frameworks */,
+				1E5670251F7BF380006E32B7 /* GitHubAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E5670101F7BEB8F006E32B7 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				1E5670111F7BEBD9006E32B7 /* Session+Rx.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		1E56701F1F7BF37F006E32B7 /* GitHubAPI */ = {
+			isa = PBXGroup;
+			children = (
+				1E5670101F7BEB8F006E32B7 /* extension */,
+				1EB6EA7B1F7EB1AA00CFA203 /* request */,
+				1EB6EA751F7EAD9E00CFA203 /* response */,
+				1E5670201F7BF37F006E32B7 /* GitHubAPI.h */,
+				1EE4BB741F7BE5E50094A58E /* GitHubAPI.swift */,
+				1E5670211F7BF37F006E32B7 /* Info.plist */,
+			);
+			path = GitHubAPI;
+			sourceTree = "<group>";
+		};
 		1E70A8EB1F7BE0420053E826 = {
 			isa = PBXGroup;
 			children = (
+				1EE4BB691F7BE4120094A58E /* Frameworks */,
+				1E56701F1F7BF37F006E32B7 /* GitHubAPI */,
 				1E70A8F51F7BE0420053E826 /* Products */,
 				1E70A8F61F7BE0420053E826 /* RepositoryViewer */,
 			);
@@ -47,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				1E70A8F41F7BE0420053E826 /* RepositoryViewer.app */,
+				1E56701E1F7BF37F006E32B7 /* GitHubAPI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,9 +159,68 @@
 			path = RepositoryViewer;
 			sourceTree = "<group>";
 		};
+		1EB6EA751F7EAD9E00CFA203 /* response */ = {
+			isa = PBXGroup;
+			children = (
+				1EB6EA761F7EADAF00CFA203 /* Repository.swift */,
+				1EB6EA791F7EADBE00CFA203 /* SearchResponse.swift */,
+			);
+			path = response;
+			sourceTree = "<group>";
+		};
+		1EB6EA7B1F7EB1AA00CFA203 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				1EE4BB721F7BE4A20094A58E /* GitHubRequest.swift */,
+				1E56700E1F7BE87A006E32B7 /* JSONDataParser.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		1EE4BB691F7BE4120094A58E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E5670131F7BECEC006E32B7 /* RxCocoa.framework */,
+				1EE4BB6C1F7BE4120094A58E /* APIKit.framework */,
+				1EE4BB6D1F7BE4120094A58E /* iOS */,
+				1EE4BB6A1F7BE4120094A58E /* Result.framework */,
+				1EE4BB6B1F7BE4120094A58E /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		1E56701B1F7BF37F006E32B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5670221F7BF37F006E32B7 /* GitHubAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		1E56701D1F7BF37F006E32B7 /* GitHubAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E5670271F7BF380006E32B7 /* Build configuration list for PBXNativeTarget "GitHubAPI" */;
+			buildPhases = (
+				1E5670191F7BF37F006E32B7 /* Sources */,
+				1E56701A1F7BF37F006E32B7 /* Frameworks */,
+				1E56701B1F7BF37F006E32B7 /* Headers */,
+				1E56701C1F7BF37F006E32B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GitHubAPI;
+			productName = GitHubAPI;
+			productReference = 1E56701E1F7BF37F006E32B7 /* GitHubAPI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1E70A8F31F7BE0420053E826 /* RepositoryViewer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E70A9061F7BE0420053E826 /* Build configuration list for PBXNativeTarget "RepositoryViewer" */;
@@ -74,10 +228,13 @@
 				1E70A8F01F7BE0420053E826 /* Sources */,
 				1E70A8F11F7BE0420053E826 /* Frameworks */,
 				1E70A8F21F7BE0420053E826 /* Resources */,
+				1EE4BB681F7BE3C80094A58E /* Embed Frameworks */,
+				1E5670181F7BF10C006E32B7 /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1E5670241F7BF380006E32B7 /* PBXTargetDependency */,
 			);
 			name = RepositoryViewer;
 			productName = RepositoryViewer;
@@ -94,6 +251,10 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = to4iki;
 				TargetAttributes = {
+					1E56701D1F7BF37F006E32B7 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					1E70A8F31F7BE0420053E826 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -114,11 +275,19 @@
 			projectRoot = "";
 			targets = (
 				1E70A8F31F7BE0420053E826 /* RepositoryViewer */,
+				1E56701D1F7BF37F006E32B7 /* GitHubAPI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1E56701C1F7BF37F006E32B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E70A8F21F7BE0420053E826 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,7 +300,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E5670181F7BF10C006E32B7 /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1E5670191F7BF37F006E32B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E5670331F7BF559006E32B7 /* Session+Rx.swift in Sources */,
+				1E56702B1F7BF38B006E32B7 /* JSONDataParser.swift in Sources */,
+				1EB6EA7A1F7EADBE00CFA203 /* SearchResponse.swift in Sources */,
+				1EB6EA771F7EADAF00CFA203 /* Repository.swift in Sources */,
+				1E56702C1F7BF38B006E32B7 /* GitHubAPI.swift in Sources */,
+				1E56702A1F7BF38B006E32B7 /* GitHubRequest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1E70A8F01F7BE0420053E826 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +345,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E5670241F7BF380006E32B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E56701D1F7BF37F006E32B7 /* GitHubAPI */;
+			targetProxy = 1E5670231F7BF380006E32B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E70A8FB1F7BE0420053E826 /* Main.storyboard */ = {
@@ -165,6 +376,62 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1E5670281F7BF380006E32B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SJ4J2CMQ6B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GitHubAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.GitHubAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E5670291F7BF380006E32B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SJ4J2CMQ6B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = GitHubAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.GitHubAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1E70A9041F7BE0420053E826 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -275,9 +542,14 @@
 		1E70A9071F7BE0420053E826 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJ4J2CMQ6B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RepositoryViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.RepositoryViewer;
@@ -290,9 +562,14 @@
 		1E70A9081F7BE0420053E826 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SJ4J2CMQ6B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RepositoryViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.to4iki.RepositoryViewer;
@@ -305,6 +582,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1E5670271F7BF380006E32B7 /* Build configuration list for PBXNativeTarget "GitHubAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E5670281F7BF380006E32B7 /* Debug */,
+				1E5670291F7BF380006E32B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1E70A8EF1F7BE0420053E826 /* Build configuration list for PBXProject "RepositoryViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
