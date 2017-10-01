@@ -1,8 +1,14 @@
 import APIKit
 
 public final class GitHubAPI {
-    public struct SearchRepositoriesRequest: GitHubRequest {
-        let query: String
+    public struct SearchRepositoriesRequest: GitHubRequest, PaginationRequest {
+        public let query: String
+        public var page: Int
+        
+        public init(query: String, page: Int = 1) {
+            self.query = query
+            self.page = page
+        }
         
         public typealias Response = SearchResponse<Repository>
         
@@ -16,10 +22,6 @@ public final class GitHubAPI {
         
         public var parameters: Any? {
             return ["q": query]
-        }
-        
-        public init(query: String) {
-            self.query = query
         }
     }
 }

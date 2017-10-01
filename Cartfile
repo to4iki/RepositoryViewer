@@ -1,2 +1,3 @@
 github "ishkawa/APIKit"
 github "ReactiveX/RxSwift"
+github "kylef/WebLinking.swift"

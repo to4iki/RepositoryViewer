@@ -29,6 +29,9 @@
 		1E70A9021F7BE0420053E826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E70A9001F7BE0420053E826 /* LaunchScreen.storyboard */; };
 		1EB6EA771F7EADAF00CFA203 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6EA761F7EADAF00CFA203 /* Repository.swift */; };
 		1EB6EA7A1F7EADBE00CFA203 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB6EA791F7EADBE00CFA203 /* SearchResponse.swift */; };
+		1EF14E781F80C077005E92D8 /* PaginationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF14E771F80C077005E92D8 /* PaginationResponse.swift */; };
+		1EF14E7A1F80C269005E92D8 /* PaginationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF14E791F80C269005E92D8 /* PaginationRequest.swift */; };
+		1EF14E7C1F80C283005E92D8 /* WebLinking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF14E7B1F80C282005E92D8 /* WebLinking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		1EE4BB6D1F7BE4120094A58E /* iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iOS; path = Carthage/Build/iOS; sourceTree = "<group>"; };
 		1EE4BB721F7BE4A20094A58E /* GitHubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRequest.swift; sourceTree = "<group>"; };
 		1EE4BB741F7BE5E50094A58E /* GitHubAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		1EF14E771F80C077005E92D8 /* PaginationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationResponse.swift; sourceTree = "<group>"; };
+		1EF14E791F80C269005E92D8 /* PaginationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaginationRequest.swift; sourceTree = "<group>"; };
+		1EF14E7B1F80C282005E92D8 /* WebLinking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebLinking.framework; path = Carthage/Build/iOS/WebLinking.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF14E7C1F80C283005E92D8 /* WebLinking.framework in Frameworks */,
 				1E5670341F7BF92B006E32B7 /* Result.framework in Frameworks */,
 				1E5670151F7BF0F6006E32B7 /* APIKit.framework in Frameworks */,
 				1E5670161F7BF0F6006E32B7 /* RxCocoa.framework in Frameworks */,
@@ -162,6 +169,7 @@
 		1EB6EA751F7EAD9E00CFA203 /* response */ = {
 			isa = PBXGroup;
 			children = (
+				1EF14E771F80C077005E92D8 /* PaginationResponse.swift */,
 				1EB6EA761F7EADAF00CFA203 /* Repository.swift */,
 				1EB6EA791F7EADBE00CFA203 /* SearchResponse.swift */,
 			);
@@ -173,6 +181,7 @@
 			children = (
 				1EE4BB721F7BE4A20094A58E /* GitHubRequest.swift */,
 				1E56700E1F7BE87A006E32B7 /* JSONDataParser.swift */,
+				1EF14E791F80C269005E92D8 /* PaginationRequest.swift */,
 			);
 			path = request;
 			sourceTree = "<group>";
@@ -180,6 +189,7 @@
 		1EE4BB691F7BE4120094A58E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1EF14E7B1F80C282005E92D8 /* WebLinking.framework */,
 				1E5670131F7BECEC006E32B7 /* RxCocoa.framework */,
 				1EE4BB6C1F7BE4120094A58E /* APIKit.framework */,
 				1EE4BB6D1F7BE4120094A58E /* iOS */,
@@ -311,6 +321,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/WebLinking.framework",
 			);
 			name = "Carthage Run Script";
 			outputPaths = (
@@ -327,9 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E5670331F7BF559006E32B7 /* Session+Rx.swift in Sources */,
+				1EF14E781F80C077005E92D8 /* PaginationResponse.swift in Sources */,
 				1E56702B1F7BF38B006E32B7 /* JSONDataParser.swift in Sources */,
 				1EB6EA7A1F7EADBE00CFA203 /* SearchResponse.swift in Sources */,
 				1EB6EA771F7EADAF00CFA203 /* Repository.swift in Sources */,
+				1EF14E7A1F80C269005E92D8 /* PaginationRequest.swift in Sources */,
 				1E56702C1F7BF38B006E32B7 /* GitHubAPI.swift in Sources */,
 				1E56702A1F7BF38B006E32B7 /* GitHubRequest.swift in Sources */,
 			);
