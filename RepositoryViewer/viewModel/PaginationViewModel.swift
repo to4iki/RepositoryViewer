@@ -12,8 +12,8 @@ final class PaginationViewModel<Element: Decodable> {
     private let disposeBag = DisposeBag()
     
     init<Request: PaginationRequest>(
-        request: Request,
         session: Session = Session.shared,
+        request: Request,
         viewWillAppear: Driver<Void>,
         scrollViewDidReachBottom: Driver<Void>) where Request.Response.Element == Element {
         
@@ -44,12 +44,12 @@ final class PaginationViewModel<Element: Decodable> {
         viewWillAppear.asObservable()
             .map { _ in 1 }
             .subscribe(action.inputs)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
         
         scrollViewDidReachBottom.asObservable()
             .withLatestFrom(action.elements)
             .flatMap { $0.nextPage.map { Observable.of($0) } ?? Observable.empty() }
             .subscribe(action.inputs)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
     }
 }

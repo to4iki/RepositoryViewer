@@ -13,7 +13,6 @@ final class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let request = GitHubAPI.SearchRepositoriesRequest(query: "Swift")
         viewModel = PaginationViewModel(
             request: request,
@@ -24,12 +23,19 @@ final class SearchViewController: UIViewController {
     }
     
     private func bind() {
-        disposeBag.bulkInsert([
-            viewModel.elements.drive(tableView.rx.items(cellIdentifier: "RepositoryCell")) { (row, element, cell) in
+        viewModel.elements
+            .drive(tableView.rx.items(cellIdentifier: "RepositoryCell")) { (row, element, cell) in
                 cell.textLabel?.text = element.fullName
-            },
-            viewModel.isLoading.map({ !$0 }).drive(indicatorView.rx.isHidden),
-            viewModel.error.drive(onNext: { print($0) })
-        ])
+            }
+            .disposed(by: disposeBag)
+        
+        viewModel.isLoading
+            .map({ !$0 })
+            .drive(indicatorView.rx.isHidden)
+            .disposed(by: disposeBag)
+        
+        viewModel.error
+            .drive(onNext: { print($0) })
+            .disposed(by: disposeBag)
     }
 }

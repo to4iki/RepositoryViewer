@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E1D77671F8D1CB000C1C3E9 /* Action.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E1D77661F8D1CB000C1C3E9 /* Action.framework */; };
-		1E1D77691F8D259000C1C3E9 /* DisposeBag+Bulk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1D77681F8D259000C1C3E9 /* DisposeBag+Bulk.swift */; };
 		1E376F2E1F8D13D700A5FF27 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E376F2D1F8D13D700A5FF27 /* UIViewController+Rx.swift */; };
 		1E376F301F8D159400A5FF27 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E376F2F1F8D159400A5FF27 /* UIScrollView+Rx.swift */; };
 		1E5670151F7BF0F6006E32B7 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4BB6C1F7BE4120094A58E /* APIKit.framework */; };
@@ -65,7 +64,6 @@
 
 /* Begin PBXFileReference section */
 		1E1D77661F8D1CB000C1C3E9 /* Action.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Action.framework; path = Carthage/Build/iOS/Action.framework; sourceTree = "<group>"; };
-		1E1D77681F8D259000C1C3E9 /* DisposeBag+Bulk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DisposeBag+Bulk.swift"; sourceTree = "<group>"; };
 		1E376F2D1F8D13D700A5FF27 /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		1E376F2F1F8D159400A5FF27 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
 		1E56700E1F7BE87A006E32B7 /* JSONDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDataParser.swift; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 		1E376F2C1F8D136500A5FF27 /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				1E1D77681F8D259000C1C3E9 /* DisposeBag+Bulk.swift */,
 				1E376F2F1F8D159400A5FF27 /* UIScrollView+Rx.swift */,
 				1E376F2D1F8D13D700A5FF27 /* UIViewController+Rx.swift */,
 			);
@@ -403,7 +400,6 @@
 			files = (
 				1E70A8FA1F7BE0420053E826 /* SearchViewController.swift in Sources */,
 				1E777A961F8D069F004D29DF /* PaginationViewModel.swift in Sources */,
-				1E1D77691F8D259000C1C3E9 /* DisposeBag+Bulk.swift in Sources */,
 				1E376F2E1F8D13D700A5FF27 /* UIViewController+Rx.swift in Sources */,
 				1E70A8F81F7BE0420053E826 /* AppDelegate.swift in Sources */,
 				1E376F301F8D159400A5FF27 /* UIScrollView+Rx.swift in Sources */,
