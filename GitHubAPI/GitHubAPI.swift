@@ -1,7 +1,7 @@
 import APIKit
 
 public final class GitHubAPI {
-    public struct SearchRepositoriesRequest: GitHubRequest, PaginationRequest {
+    public struct SearchRepositoriesRequest: GitHubRequest, SearchRequest {
         public let query: String
         public var page: Int
         
