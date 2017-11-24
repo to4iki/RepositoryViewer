@@ -2,6 +2,7 @@ import APIKit
 import WebLinking
 
 public protocol PaginationRequest: Request where Response: PaginationResponse {
+    var query: String { get }
     var page: Int { get set }
 }
 
@@ -16,7 +17,7 @@ extension PaginationRequest {
             .flatMap { Int($0) }
             .first
         
-        return Response(elements: elements, page: page, nextPage: nextPage)
+        return Response(elements: elements, query: query, page: page, nextPage: nextPage)
     }
 }
 
