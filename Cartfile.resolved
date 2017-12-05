@@ -1,5 +1,5 @@
 github "ReactiveX/RxSwift" "4.0.0"
-github "RxSwiftCommunity/Action" "3.4.1"
+github "RxSwiftCommunity/Action" "3.5.1"
 github "antitypical/Result" "3.2.4"
 github "ishkawa/APIKit" "3.1.2"
 github "kylef/WebLinking.swift" "2.0.0"
